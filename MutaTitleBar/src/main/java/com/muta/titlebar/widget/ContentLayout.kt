@@ -8,16 +8,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.RelativeLayout
 import com.muta.titlebar.Constant
+import com.muta.titlebar.R
 import com.muta.titlebar.getDimen
 import com.muta.titlebar.interpolator.BounceInterpolator
-import com.yalantis.titlebar.Constant
-import com.yalantis.titlebar.R
-import com.yalantis.titlebar.getDimen
-import com.yalantis.titlebar.interpolator.BounceInterpolator
 import kotlinx.android.synthetic.main.layout_content.view.*
 
 /**
- * Created by irinagalata on 11/23/16.
+ * Created by YBJ on 2017/7/3.
+ *
  */
 class ContentLayout : RelativeLayout, JellyWidget {
 
@@ -29,14 +27,14 @@ class ContentLayout : RelativeLayout, JellyWidget {
                 field = value
             }
         }
-    @DrawableRes var iconRes: Int? = null
+    var iconRes: Int? = null
         set(value) {
             value?.let {
                 icon.setBackgroundResource(it)
                 field = value
             }
         }
-    @DrawableRes var cancelIconRes: Int? = null
+    var cancelIconRes: Int? = null
         set(value) {
             value?.let {
                 cancelIcon.setBackgroundResource(it)

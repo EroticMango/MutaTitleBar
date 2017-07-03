@@ -1,7 +1,8 @@
 package com.muta.titlebar.widget
 
 /**
- * Created by irinagalata on 11/23/16.
+ * Created by YBJ on 2017/7/3.
+ *
  */
 interface JellyWidget {
 

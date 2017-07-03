@@ -9,13 +9,14 @@ import android.view.View
 import android.view.animation.BounceInterpolator
 import android.widget.FrameLayout
 import com.muta.titlebar.Constant
+import com.muta.titlebar.R
 import com.muta.titlebar.getDimen
 import com.muta.titlebar.interpolator.JellyInterpolator
 import com.muta.titlebar.listener.AnimationListener
-import com.yalantis.titlebar.R
 
 /**
- * Created by irinagalata on 11/15/16.
+ * Created by YBJ on 2017/7/3.
+ *
  */
 class JellyView : View, JellyWidget {
 

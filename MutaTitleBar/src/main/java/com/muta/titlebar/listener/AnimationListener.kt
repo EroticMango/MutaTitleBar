@@ -3,7 +3,8 @@ package com.muta.titlebar.listener
 import android.animation.Animator
 
 /**
- * Created by irinagalata on 11/8/16.
+ * Created by YBJ on 2017/7/3.
+ *
  */
 abstract class AnimationListener : Animator.AnimatorListener {
 

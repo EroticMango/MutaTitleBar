@@ -1,7 +1,8 @@
 package com.muta.titlebar.listener
 
 /**
- * Created by irinagalata on 11/25/16.
+ * Created by YBJ on 2017/7/3.
+ *
  */
 abstract class JellyListener {
 

@@ -1,7 +1,8 @@
 package com.muta.titlebar
 
 /**
- * Created by irinagalata on 11/24/16.
+ * Created by YBJ on 2017/7/3.
+ *
  */
 object Constant {
 

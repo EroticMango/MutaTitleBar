@@ -12,12 +12,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.FrameLayout
 import com.muta.titlebar.Constant
+import com.muta.titlebar.R
 import com.muta.titlebar.listener.JellyListener
-import com.yalantis.titlebar.R
 import kotlinx.android.synthetic.main.jelly_toolbar.view.*
 
 /**
- * Created by irinagalata on 11/23/16.
+ * Created by YBJ on 2017/7/3.
+ *
  */
 class JellyToolbar : FrameLayout, JellyWidget {
 
@@ -36,24 +37,24 @@ class JellyToolbar : FrameLayout, JellyWidget {
             contentLayout.contentView = value
             field = value
         }
-    @DrawableRes var iconRes: Int? = null
+    var iconRes: Int? = null
         set(value) {
             contentLayout.iconRes = value
             field = value
         }
-    @DrawableRes var cancelIconRes: Int? = null
+    var cancelIconRes: Int? = null
         set(value) {
             contentLayout.cancelIconRes = value
             field = value
         }
-    @ColorInt var startColor: Int? = null
+    var startColor: Int? = null
         set(value) {
             value?.let {
                 jellyView.startColor = value
                 field = value
             }
         }
-    @ColorInt var endColor: Int? = null
+    var endColor: Int? = null
         set(value) {
             value?.let {
                 jellyView.endColor = value

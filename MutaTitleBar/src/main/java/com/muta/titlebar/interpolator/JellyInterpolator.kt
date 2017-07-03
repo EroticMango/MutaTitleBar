@@ -3,7 +3,8 @@ package com.muta.titlebar.interpolator
 import android.view.animation.Interpolator
 
 /**
- * Created by irinagalata on 11/8/16.
+ * Created by YBJ on 2017/7/3.
+ *
  */
 class JellyInterpolator : Interpolator {
 
