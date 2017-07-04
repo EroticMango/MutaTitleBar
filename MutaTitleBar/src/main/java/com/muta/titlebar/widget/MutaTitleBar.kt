@@ -3,8 +3,6 @@ package com.muta.titlebar.widget
 import android.content.Context
 import android.os.Bundle
 import android.os.Parcelable
-import android.support.annotation.ColorInt
-import android.support.annotation.DrawableRes
 import android.support.v7.widget.Toolbar
 import android.text.TextUtils
 import android.util.AttributeSet
@@ -13,14 +11,14 @@ import android.view.View
 import android.widget.FrameLayout
 import com.muta.titlebar.Constant
 import com.muta.titlebar.R
-import com.muta.titlebar.listener.JellyListener
-import kotlinx.android.synthetic.main.jelly_toolbar.view.*
+import com.muta.titlebar.listener.MutaTitleListener
+import kotlinx.android.synthetic.main.muta_titlebar.view.*
 
 /**
  * Created by YBJ on 2017/7/3.
  *
  */
-class JellyToolbar : FrameLayout, JellyWidget {
+class MutaTitleBar : FrameLayout, MutaTitleWidget {
 
     companion object {
         private const val KEY_IS_EXPANDED = "key_is_expanded"
@@ -61,14 +59,14 @@ class JellyToolbar : FrameLayout, JellyWidget {
                 field = value
             }
         }
-    var jellyListener: JellyListener? = null
+    var jellyListener: MutaTitleListener? = null
 
     private var isExpanded = false
 
     constructor(context: Context?) : this(context, null)
     constructor(context: Context?, attrs: AttributeSet?) : this(context, attrs, 0)
     constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(context, attrs, defStyleAttr) {
-        LayoutInflater.from(context).inflate(R.layout.jelly_toolbar, this)
+        LayoutInflater.from(context).inflate(R.layout.muta_titlebar, this)
 
         attrs?.let { retrieveAttributes(attrs) }
 

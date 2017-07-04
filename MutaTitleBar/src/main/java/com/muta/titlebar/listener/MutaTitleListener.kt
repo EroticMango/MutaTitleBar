@@ -4,7 +4,7 @@ package com.muta.titlebar.listener
  * Created by YBJ on 2017/7/3.
  *
  */
-abstract class JellyListener {
+abstract class MutaTitleListener {
 
     open fun onToolbarExpandingStarted() = Unit
 

@@ -11,14 +11,14 @@ import android.widget.FrameLayout
 import com.muta.titlebar.Constant
 import com.muta.titlebar.R
 import com.muta.titlebar.getDimen
-import com.muta.titlebar.interpolator.JellyInterpolator
+import com.muta.titlebar.interpolator.MutaTitleInterpolator
 import com.muta.titlebar.listener.AnimationListener
 
 /**
  * Created by YBJ on 2017/7/3.
  *
  */
-class JellyView : View, JellyWidget {
+class MutaTitleView : View, MutaTitleWidget {
 
     var isExpanded = false
     var startColor: Int = android.R.color.transparent
@@ -31,9 +31,9 @@ class JellyView : View, JellyWidget {
     private val paint = Paint()
     private val path = Path()
     private var gradient: LinearGradient? = null
-    private val jellyViewSize = getDimen(R.dimen.jelly_view_size)
-    private val jellyViewWidth = getDimen(R.dimen.jelly_view_width)
-    private val jellyViewOffset = getDimen(R.dimen.jelly_view_offset)
+    private val jellyViewSize = getDimen(R.dimen.muta_view_size)
+    private val jellyViewWidth = getDimen(R.dimen.muta_view_width)
+    private val jellyViewOffset = getDimen(R.dimen.muta_view_offset)
 
     constructor(context: Context?) : this(context, null)
     constructor(context: Context?, attrs: AttributeSet?) : this(context, attrs, 0)
@@ -110,7 +110,7 @@ class JellyView : View, JellyWidget {
     private fun animateJelly(coefficient: Int, moveOffset: Boolean, animDuration: Long) {
         ValueAnimator.ofFloat(0f, jellyViewWidth / 2).apply {
             duration = animDuration
-            interpolator = JellyInterpolator()
+            interpolator = MutaTitleInterpolator()
             addUpdateListener {
                 difference = animatedValue as Float * coefficient
                 invalidate()

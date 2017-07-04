@@ -4,7 +4,7 @@ package com.muta.titlebar.widget
  * Created by YBJ on 2017/7/3.
  *
  */
-interface JellyWidget {
+interface MutaTitleWidget {
 
     fun collapse()
 

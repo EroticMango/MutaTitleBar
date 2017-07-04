@@ -2,7 +2,6 @@ package com.muta.titlebar.widget
 
 import android.animation.ValueAnimator
 import android.content.Context
-import android.support.annotation.DrawableRes
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
@@ -17,7 +16,7 @@ import kotlinx.android.synthetic.main.layout_content.view.*
  * Created by YBJ on 2017/7/3.
  *
  */
-class ContentLayout : RelativeLayout, JellyWidget {
+class ContentLayout : RelativeLayout, MutaTitleWidget {
 
     var contentView: View? = null
         set(value) {
